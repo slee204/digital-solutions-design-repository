@@ -21,3 +21,6 @@ typings/
 
 #storybook
 storybook-static
+
+#build folder
+/public/build/*
