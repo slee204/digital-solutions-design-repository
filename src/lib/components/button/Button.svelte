@@ -1,8 +1,6 @@
 <script>
   import { createEventDispatcher } from "svelte";
-  import Icon from "svelte-awesome/components/Icon";
-  import { faArrowAltCircleUp } from "@fortawesome/free-solid-svg-icons";
-
+  import Icon from "../icon/Icon.svelte";
   export let primary = false;
   export let hasIcon = false;
   export let label = "UPLOAD";
@@ -23,13 +21,12 @@
 >
   <div class="label-container">
     {#if hasIcon}
-      <div
-        class={["icon", `${primary ? "icon-primary" : "label-secondary"}`].join(
+      <Icon
+        class={["icon", `${primary ? "icon-primary" : "icon-secondary"}`].join(
           " "
         )}
-      >
-        <Icon data={faArrowAltCircleUp} scale="2" />
-      </div>
+        name="arrow-circle-up"
+      />
     {/if}
     <span
       class={["label", `${primary ? "label-primary" : "label-secondary"}`].join(
@@ -67,18 +64,6 @@
   }
 
   .label-secondary {
-    @apply text-teal-900;
-  }
-
-  .icon {
-    @apply text-lg mr-2;
-  }
-
-  .icon-primary {
-    @apply text-white;
-  }
-
-  .icon-secondary {
     @apply text-teal-900;
   }
 </style>
