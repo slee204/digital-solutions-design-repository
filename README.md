@@ -9,7 +9,7 @@ This is a work-in-progress repository.
 ### Steps to build
 
 ```bash
-//Quickstart
+// Quickstart
 npm install
 npm run storybook
 ```
