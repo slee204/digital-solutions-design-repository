@@ -1,0 +1,147 @@
+$color-default-text: #333333;
+$color-card-icon: #5f5f5f;
+$color-placeholder-text: #a1a1a1;
+$color-primary-saturated: #00aabb;
+$color-active: #00aabb;
+$color-nav-active: #00aabb;
+$color-nav-background: #254e5e;
+$color-aside-background: #f5f5f5;
+$color-background-block: #f7f7f7; // edit block / sidebar panes
+$color-medium-text: #555; // primary text color
+$color-heavy-text: #333333; // primary color
+$color-soft-button-text: $color-primary-saturated;
+$color-soft-button-hover: #f5fcfc; // hover bg color for buttons
+$color-soft-button-active: #e0f5f7; // active bg color for buttons
+$color-primary-button-background: $color-primary-saturated;
+$color-complexity-none-background: #d7d7d7;
+$color-complexity-low-background: #b7b7b7;
+$color-complexity-med-low-background: #e1bd6f;
+$color-complexity-med-background: #fdac00;
+$color-complexity-med-high-background: #f7931e;
+$color-complexity-high-background: #fd7d00;
+$color-badge-label-pill-background: #254e5e;
+$color-tag-label-pill-background: #777777;
+$color-label-pill-text: #ffffff;
+$color-sidebar-table-border: #e1e1e1;
+$color-sidebar-light-text: #aaaaaa;
+$color-medium-gray: #c7c7c7;
+$color-comments-icon-and-number: $color-card-icon;
+$color-parenthetical-text: #666666;
+$color-gray-text: #666666;
+$color-med-hover-2: #0094a3;
+$color-hover-link: #00d8ff;
+$color-toggle-pill-text: #7d7d7d;
+$color-toggle-pill-unselected: #e8e8e8;
+$color-toggle-pill-hover: #9c9c9c;
+$color-toggle-pill-selected: #346476;
+$color-no-score-inactive-text: #bfbfbf;
+$color-tab-inactive-text: #454545;
+$color-tab-active-text: white;
+$color-warning: #f7b219;
+$color-score: #53755c;
+$color-impact: #53755c;
+$color-form-select-background: #00aabb;
+$color-active-report-tab-background: #00aabb;
+$color-green-check-icon: #2bfc00;
+$color-toggle-pill-border: #999999;
+$color-main-content-border: #e3e3e3;
+$color-friendly-notification-background: #d7eff2;
+$color-basic-text: #000000;
+$color-black-background: #000000;
+$color-light-text: #fff; // For the dark background
+$color-white-background: #ffffff;
+$color-white-border: #ffffff;
+$color-dark-teal: #346376;
+$color-dark-1: #18323d;
+$color-dark-2: #254e5e;
+$color-dark-3: #006d68;
+$color-quartile-background: #6a8691;
+$color-quartile-highlighted: #254e5e;
+$color-med-1: #346476;
+$color-med-2: #00aabb;
+$color-med-3: #00b4ac;
+$color-med-4: #6d9ba5;
+$color-bright-1: #00a9bb;
+$color-bright-2: #76cbd7;
+$color-bright-3: #00a9ac;
+$color-bright-4: #a6dbe7;
+$color-bright-5: #eeffff;
+$color-inactive-1: #a4a4a4;
+$color-inactive-2: #b3b3b3;
+$color-inactive-3: #cccccc;
+$color-csats-fields-after: #cccccc;
+$color-inactive-4: #e6e6e6;
+$color-instructional-text: #a4a4a4;
+$color-border: $color-inactive-3;
+$color-background: white;
+$color-background-lighter: #fafafa;
+$color-background-success: #e0f8e0;
+$color-background-dark: #666666;
+$color-background-block: #f7f7f7; // edit block / sidebar panes (CSATS2.0)
+$color-score-good: #53755c;
+$color-success: #8cc63f;
+$color-rating-useful: #348248;
+$color-rating-useful-hover-over: $color-dark-teal;
+$color-rating-hover-over: #777777;
+$color-rating-useful-icon-inactive: #333333;
+$color-rating-useful-icon-active: #ffa500;
+$color-rating-not-useful: #ffa500;
+$color-graph-front: #2f6477;
+$color-graph-back: #abc1c8;
+$color-active-1: white;
+$color-clickable: #00aabc;
+$color-focus-dark: #009900;
+$color-focus-light: #eeffee;
+$color-unfocus-light: #cceeff;
+$color-asterisk: #ca3c3c;
+$color-danger-1: #ca3c3c; // Red, really stands out on everything.
+$color-required-symbol: #ca3c3c;
+$color-danger-2: #aa0000;
+$color-credit: #8cc63f; // Same as score good, for now
+$color-debit: #ca0000;
+$color-error: #fa071a;
+$color-text-selection: #d4e2fd;
+$color-table-highlight: #eeffff;
+$color-banner-background: #d9f0f4;
+$color-sidebar-border: #f1f1f1;
+$color-insights-sidebar-border: #e3e3e3;
+$color-changes-saved-alert: #008000;
+$color-upload-complete: #008000;
+$color-social-mentions-box-shadow: #585858;
+
+$button-structure-border-1: #999;
+$button-structure-border-2: black;
+$button-structure-background-color: #e6e6e6;
+$button-color-1: white;
+$button-color-danger: #990033;
+
+$color-discussion-message-removed: color-transparent-black(0.3);
+$tile-background-black-1: color-transparent-black(0.2);
+$tile-background-black-2: color-transparent-black(0.05);
+$tile-background-black-3: color-transparent-black(0.025);
+$tile-background-black-4: color-transparent-black(0.65);
+$tile-background-black-5: color-transparent-black(0.1);
+$tile-background-black-6: color-transparent-black(0.25);
+$tile-background-black-7: color-transparent-black(0.5);
+$more-discussions-button-background: color-transparent-white(0.7);
+$more-discussions-button-background-hover: color-transparent-white(0.04);
+$more-discussions-button-border: color-transparent-black(0.24);
+$color-neutral-border: color-transparent-black(0.2);
+$color-comment-ratings-not-useful-text: color-transparent-black(0.8);
+$color-inactive-report-tab-background: color-transparent-black(0.1);
+$color-inactive-report-tab-text: color-transparent-black(0.5);
+$color-report-tab-border: color-transparent-black(0.15);
+
+:export {
+	colorDefaultText: color-default-text;
+	colorCardIcon: color-card-icon;
+	colorPlaceholderText: color-placeholder-text;
+	colorPrimarySaturated: color-primary-saturated;
+	colorActive: color-active;
+	colorNavActive: color-nav-active;
+	colorNavBackground: color-nav-background;
+	colorAsideBackground: color-aside-background;
+	colorBackgroundBlock: color-background-block;
+	colorMediumText: color-medium-text;
+	colorHeavyText: color-heavy-text;
+}

@@ -1,0 +1,277 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs/blocks";
+
+<Meta title="Pages/Colors" />
+
+<style>{`
+  h1 {
+    color: #555555;
+  }
+
+  .subheading {
+    --mediumdark: '#555555';
+    font-weight: 900;
+    font-size: 13px;
+    color: #555555;
+    letter-spacing: 6px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-top: 40px;
+  }
+
+  .link-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+  }
+
+  @media (min-width: 620px) {
+    .link-list {
+      row-gap: 20px;
+      column-gap: 20px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media all and (-ms-high-contrast:none) {
+  .link-list {
+      display: -ms-grid;
+      -ms-grid-columns: 1fr 1fr;
+      -ms-grid-rows: 1fr 1fr;
+    }
+  }
+
+  .link-item {
+    display: block;
+    padding: 20px 30px 20px 15px;
+    border: 1px solid #00000010;
+    border-radius: 5px;
+    transition: background 150ms ease-out, border 150ms ease-out, transform 150ms ease-out;
+    color: #333333;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .link-item:hover {
+    border-color: #1EA7FD50;
+    transform: translate3d(0, -3px, 0);
+    box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
+  }
+
+  .link-item:active {
+    border-color: #1EA7FD;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .link-item strong {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 2px;
+  }
+  
+  .link-item img {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    flex: none;
+  }
+
+  .link-item span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .tip {
+    display: inline-block;
+    border-radius: 1em;
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: 700;
+    background: #E7FDD8;
+    color: #66BF3C;
+    padding: 4px 12px;
+    margin-right: 10px;
+    vertical-align: top;
+  }
+
+  .tip-wrapper {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .tip-wrapper code {
+    font-size: 12px;
+    display: inline-block;
+  }
+
+  .no-style-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .color-object {
+    display: flex;
+    flex-direction: row;
+    vertical-align: center;
+    align-content: center;
+  }
+
+  .color-container {
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .square {
+    height: 100px;
+    width: 100px;
+    margin-right: 30px;
+    background-color: #333333;
+  }
+
+  .color-text {
+    width: 100px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .color-label {
+    vertical-align: center;
+    justify-content: center;
+  }
+
+  .color-default-text { background-color: #333333;}
+  .color-card-icon { background-color: #5f5f5f;}
+  .color-placeholder-text { background-color: #a1a1a1;}
+  .color-primary-saturated { background-color: #00aabb;}
+  .color-active { background-color: #00aabb;}
+  .color-nav-active { background-color: #00aabb;}
+  .color-nav-background { background-color: #254e5e;}
+  .color-aside-background { background-color: #f5f5f5;}
+  .color-background-block { background-color: #f7f7f7;}
+  .color-medium-text { background-color: #555;}
+  .color-heavy-text { background-color: #333333;}
+`}</style>
+
+# Colors
+
+<article class="size-1">
+  <br />
+  <div>
+    <div class="color-object">
+      <div class="color-container">
+        <div class="square color-primary-saturated"></div>
+        <p class="color-text">#00aabb</p>
+      </div>
+      <div class="color-label">$color-primary-saturated</div>
+    </div>
+  </div>
+  <ul class="no-style-list">
+    <li>
+      <div class="color-object">
+        <div class="color-container">
+          <div class="square color-default-text"></div>
+          <p class="color-text">#333333</p>
+        </div>
+        <div class="color-label">$color-default-text</div>
+      </div>
+    </li>
+    <li>
+      <div class="color-object">
+        <div class="color-container">
+          <div class="square color-card-icon"></div>
+          <p class="color-text">#5f5f5f</p>
+        </div>
+        <div class="color-label">$color-card-icon</div>
+      </div>
+    </li>
+    <li>
+      <div class="color-object">
+        <div class="color-container">
+          <div class="square color-card-icon"></div>
+          <p class="color-text">#a1a1a1</p>
+        </div>
+        <div class="color-label">$color-placeholder-text</div>
+      </div>
+    </li>
+    <li>
+      <div class="color-object">
+        <div class="color-container">
+          <div class="square color-primary-saturated"></div>
+          <p class="color-text">#00aabb</p>
+        </div>
+        <div class="color-label">$color-primary-saturated</div>
+      </div>
+    </li>
+    <li>
+      <div class="color-object">
+        <div class="color-container">
+          <div class="square color-active"></div>
+          <p class="color-text">#00aabb</p>
+        </div>
+        <div class="color-label">$color-active</div>
+      </div>
+    </li>
+    <li>
+      <div class="color-object">
+        <div class="color-container">
+          <div class="square color-nav-active"></div>
+          <p class="color-text">#00aabb</p>
+        </div>
+        <div class="color-label">$color-nav-active</div>
+      </div>
+    </li>
+    <li>
+      <div class="color-object">
+        <div class="color-container">
+          <div class="square color-nav-background"></div>
+          <p class="color-text">#254e5e</p>
+        </div>
+        <div class="color-label">$color-nav-background</div>
+      </div>
+    </li>
+    <li>
+      <div class="color-object">
+        <div class="color-container">
+          <div class="square color-aside-background"></div>
+          <p class="color-text">#f5f5f5</p>
+        </div>
+        <div class="color-label">$color-aside-background</div>
+      </div>
+    </li>
+    <li>
+      <div class="color-object">
+        <div class="color-container">
+          <div class="square color-background-block"></div>
+          <p class="color-text">#f7f7f7</p>
+        </div>
+        <div class="color-label">$color-background-block</div>
+      </div>
+    </li>
+    <li>
+      <div class="color-object">
+        <div class="color-container">
+          <div class="square color-medium-text"></div>
+          <p class="color-text">#555</p>
+        </div>
+        <div class="color-label">$color-medium-text</div>
+      </div>
+    </li>
+    <li>
+      <div class="color-object">
+        <div class="color-container">
+          <div class="square color-heavy-text"></div>
+          <p class="color-text">#333333</p>
+        </div>
+        <div class="color-label">$color-heavy-text</div>
+      </div>
+    </li>
+  </ul>
+</article>
